@@ -7,6 +7,12 @@
     "start": "webpack-dev-server",
     "build": "webpack -p"
   },
+  "keywords": [
+    "cycle",
+    "cyclejs",
+    "cycle.js",
+    "wombat"
+  ],
   "license": "MIT",
   "dependencies": {
     "@cycle/dom": "^12.1.0",
