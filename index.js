@@ -7,16 +7,21 @@ function intent(DOM) {
 }
 
 function model(events$) {
-  return events$.mapTo(true).startWith(false);
+  return events$
+    .map(ev => {
+      alert('received event');
+      return true;
+    })
+    .startWith(false);
 }
 
 function vtree(state$) {
-  alert('received event');
   return state$.map(state =>
     div([
       svg(
         {
           attrs: {
+            class: 'icon',
             width: '24px',
             height: '24px',
             viewBox: '0 0 24 24'
